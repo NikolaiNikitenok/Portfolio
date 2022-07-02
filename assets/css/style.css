@@ -1,0 +1,160 @@
+/*
+:link - Непосещенная
+:visited - Посещенная
+:hover - Наведение курсора
+:active - Нажали мышкой, но не отпустили
+*/
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    min-height: 100%;
+    text-align: center;
+    background: #21232F;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+.header {
+    width: 100%;
+    padding-top: 30px;
+    
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    font-size: 30px;
+    font-weight: 700;
+    color: #EFF2F5;
+    margin-left: 20px;
+    border-bottom: 3px solid #EFF2F5;
+    border-top: 3px solid #EFF2F5;
+    border-radius: 10px
+}
+
+/* Nav */
+.nav {
+    font-size: 18px;
+    text-transform: uppercase;
+    
+}
+
+.nav__link {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 50px;
+    position: relative;
+    
+    color: #fff;
+    text-decoration: none;
+    
+    transition: color .1s linear;
+}
+
+.nav__link:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    
+    background-color: #3B6EC9;
+    opacity: 0;
+    
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    
+    transition: opacity .1s linear;
+}
+
+.nav__link:hover {
+    color: #3B6EC9;
+}
+
+.nav__link:hover:after {
+    opacity: 1;
+}
+
+
+
+/* Поиск */
+
+* {box-sizing: border-box;}
+form {
+  width: auto;
+  float: right;
+  margin-right: 50px;
+}
+input {
+  width: 250px;
+  height: 42px;
+  padding-left: 15px;
+  border-radius: 42px;
+  border: 2px solid #324b4e;
+  background: #EFF2F5;
+  outline: none;
+  position: relative;
+  transition: .3s linear;
+}
+input:focus {
+  width: 350px;
+}
+/*
+button {
+  width: 42px;
+  height: 42px;
+  background: none;
+  border: none;
+  position: absolute;
+  top: -2px;
+  right: 0;
+}
+button:before{
+  content: "\f002";
+  font-family: FontAwesome;
+  color: #324b4e;
+}
+*/
+
+/* Конец поиска */
+
+
+
+
+
+
+/*
+
+██████████████████████████████████████████████████████
+█▄─▀█▄─▄█▄─▄█▄─█─▄█▄─▄█─▄─▄─█▄─▄▄─█▄─▀█▄─▄█─▄▄─█▄─█─▄█
+██─█▄▀─███─███─▄▀███─████─████─▄█▀██─█▄▀─██─██─██─▄▀██
+▀▄▄▄▀▀▄▄▀▄▄▄▀▄▄▀▄▄▀▄▄▄▀▀▄▄▄▀▀▄▄▄▄▄▀▄▄▄▀▀▄▄▀▄▄▄▄▀▄▄▀▄▄▀
+
+*/
+
